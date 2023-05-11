@@ -19,7 +19,7 @@ jobs:
         with:
           release-type: node
           default-branch: main
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.INTERCEPTED-ROUTES-POC }}
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -40,9 +40,3 @@ jobs:
       - name: Build
         run: npm run build
         if: ${{ steps.release.outputs.releases_created }}
-
-      - name: Publish
-        run: npm publish
-        if: ${{ steps.release.outputs.releases_created }}
-        env:
-          NPM_GITHUB_TOKEN: ${{ secrets.NPM_TOKEN }}
