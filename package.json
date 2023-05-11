@@ -1,6 +1,6 @@
 {
   "name": "intercepted-routes-poc",
-  "version": "1.0.0",
+  "version": "4.9.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
