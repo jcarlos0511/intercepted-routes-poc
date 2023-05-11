@@ -19,3 +19,4 @@ jobs:
         with:
           release-type: node
           default-branch: main
+          release-as: 'v4.9.1'
