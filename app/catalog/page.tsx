@@ -10,6 +10,7 @@ export default async function ProductsPage() {
           {`catalog/`}
         </div>
       </div>
+      v4.9.1
     </div>
   )
 }
