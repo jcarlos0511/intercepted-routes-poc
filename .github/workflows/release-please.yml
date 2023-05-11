@@ -19,7 +19,7 @@ jobs:
         with:
           release-type: node
           default-branch: main
-          token: ${{ secrets.INTERCEPTED-ROUTES-POC }}
+          token: ${{ secrets.INTERCEPTED_ROUTES_POC }}
 
       - name: Checkout
         uses: actions/checkout@v3
