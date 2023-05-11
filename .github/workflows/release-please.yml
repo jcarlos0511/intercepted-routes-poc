@@ -19,8 +19,3 @@ jobs:
         with:
           release-type: node
           default-branch: main
-          token: ${{ secrets.INTERCEPTED_ROUTES_POC }}
-
-      - name: Checkout
-        uses: actions/checkout@v3
-        if: ${{ steps.release.outputs.releases_created }}
