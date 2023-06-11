@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ['tailwindui.com'],
+  },
   async redirects() {
     return [
       {
         source: '/',
-        destination: '/catalog',
+        destination: '/products',
         permanent: true,
       },
     ]
